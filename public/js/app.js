@@ -1,6 +1,5 @@
 const formulario = document.querySelector('form');
 const textoPesquisa = document.querySelector('#textoPesquisa');
-
 const localLabel = document.querySelector('#localLabel');
 const tempLabel = document.querySelector('#tempLabel');
 const countryLabel = document.querySelector('#countryLabel');
@@ -12,7 +11,7 @@ formulario.addEventListener('submit', (e) =>{
     e.preventDefault();
 
     tempCard.style.display = 'none';
-    fetch(`http://localhost:8000/Weather?locale=${textoPesquisa.value}`).then((response) =>{
+    fetch(`/Weather?locale=${textoPesquisa.value}`).then((response) =>{
         response.json().then((dados) =>{
             if(dados.Erro) 
             {

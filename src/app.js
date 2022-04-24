@@ -5,6 +5,7 @@ const hbs = require('hbs');
 const mapBox = require('./util/mapBox') 
 const weatherStack = require('./util/WeatherStack');
 
+
 const app = express();
 
 //Definição de caminhos
@@ -95,6 +96,7 @@ app.get('*', (req, res) =>{
     });
 });
 
-app.listen(8000, () => {
+const port = process.env.PORT || 8000;
+app.listen(port, () => {
     console.log('Server is up on port 8000.')
 })
