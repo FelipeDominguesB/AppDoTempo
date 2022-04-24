@@ -7,7 +7,7 @@ const weatherStack = require('./util/WeatherStack');
 
 
 const app = express();
-
+const port = process.env.PORT || 8000;
 //Definição de caminhos
 const publicDirectoryPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
@@ -96,7 +96,8 @@ app.get('*', (req, res) =>{
     });
 });
 
-const port = process.env.PORT || 8000;
+
+
 app.listen(port, () => {
     console.log('Server is up on port 8000.')
 })

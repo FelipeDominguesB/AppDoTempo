@@ -15,6 +15,11 @@ formulario.addEventListener('submit', (e) =>{
         response.json().then((dados) =>{
             if(dados.Erro) 
             {
+                localLabel.textContent = "Erro: " + dados.Erro;
+                countryLabel.textContent = ``;
+                tempLabel.textContent = ``;
+                imgWeather.src = `img/erro.png`
+                tempCard.style.display = 'flex';
             }
             else{
                 localLabel.textContent = "Local: " + dados.Local;
