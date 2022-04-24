@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <title>{{name}}</title>
+</head>
+<body>
+    
+
+    <div class="main-content">
+        {{>header}}
+        <p>Site de consulta metereológica criado em Node JS! Digite o nome do local desejado e veja a temperatura desse local.</p>
+
+        <form action="">
+            <input type="text" id="textoPesquisa" placeholder="Localização">
+            <button type="submit" id="btnFormulario">Pesquisar</button>
+        </form>
+
+        <div class="card-content">
+            <img id='weatherImg' src="img/weather.png" onerror="this.src='img/weather.png'">
+            <div class="card-text">
+                <p id='localLabel'>Local: Parelheiros</p>
+                <p id='countryLabel'>País: Brazil</p>
+                <p id='tempLabel'>Temperatura: 27 ºC</p>
+            </div>
+        </div>
+    </div>
+
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a{
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+footer a{
+    text-decoration: none;
+    color: #888888;
+}
+footer{
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+
+.portrait{
+    width: 150px;
+}
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid #888888;
+    background-color: #888888;
+    color: white;
+    padding: 8px;
+}
+
+
+.about-me{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+.about-me img, .about-me p{
+    max-width: fit-content;
+    margin: 10px;
+}
+
+.about-me img{
+    border-radius: 50%;
+}
+
+.about-me p{
+    align-self: center;
+    text-align: justify;
+}
+
+.about-me a, .answer a{
+    color: #888888;
+    text-decoration: underline;
+}
+
+.question-text{
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+}
+
+.card-content{
+    margin: 20px auto 0 auto;
+    
+    display: flex;
+    width: 70%;
+    border: 3px solid #cccccc;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.card-content img{
+    margin: 0 10px 0 5px;
+    width: 120px;
+}
+
+.card-content p{
+    margin-left: 20px;
+    align-self: center;
+    flex-wrap: 1;
+}
