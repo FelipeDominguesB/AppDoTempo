@@ -9,6 +9,7 @@ body{
     min-height: 100vh;
 }
 
+
 .main-content{
     flex-grow: 1;
 }
@@ -63,8 +64,9 @@ button{
 
 .about-me{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: auto;
+    align-items: center;
 }
 
 .about-me img, .about-me p{
@@ -79,6 +81,7 @@ button{
 .about-me p{
     align-self: center;
     text-align: justify;
+    
 }
 
 .about-me a, .answer a{
@@ -92,12 +95,13 @@ button{
 
 p{
     text-align: justify;
+    line-height: 1.5em;
 }
 
 .card-content{
     display: none;
     margin: 20px auto 0 auto;
-    width: 70%;
+    width: 80%;
     border: 3px solid #cccccc;
     border-radius: 10px;
     flex-direction: row;
@@ -106,11 +110,13 @@ p{
 
 .card-content img{
     margin: 0 10px 0 5px;
+    padding-top: 5px;
     width: 120px;
 }
 
 .card-content p{
     margin-left: 20px;
+    padding-right: 10px;
     align-self: center;
     flex-wrap: 1;
 }
