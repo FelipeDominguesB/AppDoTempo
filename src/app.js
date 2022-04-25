@@ -56,7 +56,6 @@ app.get('/Weather', (req, res) =>{
 
         weatherStack({latitude, longitude, location}, (mapError, mapData) =>{
             if(mapError) return res.send({"Erro" : mapError});
-            
             res.send( {
                 "Local": mapData.location.name,
                 "Pais": mapData.location.country,

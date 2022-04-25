@@ -25,7 +25,7 @@ formulario.addEventListener('submit', (e) =>{
                 localLabel.textContent = "Local: " + dados.Local;
                 countryLabel.textContent = `País: ${dados.Pais}`;
                 tempLabel.textContent = `Temperatura: ${dados.Temperatura}ºC`;
-                imgWeather.src = `img/weather/${dados.Descricao.split(' ').join('')}.png`
+                imgWeather.src = `img/${dados.Descricao.split(' ').join('').toLowerCase()}.png`
                 tempCard.style.display = 'flex';
             }
             
